@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src='a.out.js'></script>
+  </head>
+  <body>
+    <button type="button" name="button">Click me!</button>
+    <script>
+      document.getElementsByName('button')[0].addEventListener('click', () => {
+        console.log(UTF8ToString(ccall('handleClick')))
+      })
+    </script>
+  </body>
+</html>
